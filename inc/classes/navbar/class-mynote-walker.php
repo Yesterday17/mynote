@@ -1,7 +1,7 @@
 <?php
 /**
  * Mynote_Walker
- * Custom nav menu by using Bootscrap 4.
+ * Custom nav menu by using Bootstrap 4.
  * Bootscrap 4 CSS file is required.
  * https://getbootstrap.com/docs/4.1/getting-started/download/
  *
@@ -19,7 +19,7 @@
  */
 class Mynote_Walker extends Walker_Nav_Menu {
     /**
-     * Constructer.
+     * Constructor.
      */
     public function __construct() {
         add_filter('nav_menu_css_class', function ($classes, $item, $args, $depth) {
@@ -102,7 +102,8 @@ class Mynote_Walker extends Walker_Nav_Menu {
         }
 
         if ($depth > 0) {
-            $manual_class = array_values($classes)[0].' dropdown-item';
+            $data = array_values($classes);
+            $manual_class = $data[0].' dropdown-item';
             $atts['class'] = trim($manual_class);
         }
 

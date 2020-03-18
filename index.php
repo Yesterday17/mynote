@@ -12,7 +12,7 @@
  */
 $custom_header_image = '';
 $custom_header_css = '';
-if ( has_header_image() ) {
+if (has_header_image()) {
     $custom_header_image = 'background-image: url('.get_header_image().'); background-size: contain; background-position: center; background-repeat: no-repeat;';
     $custom_header_css = 'has-custom-header';
 }
@@ -51,32 +51,32 @@ get_header(); ?>
         </div>
         <div class="container">
             <div class="row row-layout-choice-home">
-                <section id="main-container" class="<?php echo esc_attr( mynote_main_container_css() ); ?>">
-					<?php get_template_part( 'loop' ); ?>
-					<?php get_template_part( 'pagination' ); ?>
-				</section>
+                <section id="main-container" class="<?php echo esc_attr(mynote_main_container_css()); ?>">
+                    <?php get_template_part('template-parts/loop'); ?>
+                    <?php get_template_part('template-parts/pagination'); ?>
+                </section>
 
-				<?php if ( mynote_is_sidebar() ) : ?>
-				<aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
-					<?php get_sidebar( 'home' ); ?>
-				</aside>
-				<?php endif; ?>
-			</div>
-		</div>
-	</main>
+                <?php if (mynote_is_sidebar()) : ?>
+                    <aside id="aside-container" class="col-lg-4 col-md-4 col-sm-12" role="complementary">
+                        <?php get_sidebar('home'); ?>
+                    </aside>
+                <?php endif; ?>
+            </div>
+        </div>
+    </main>
 
-	<br class="clearfix" />
+    <br class="clearfix"/>
 
-	<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-	<aside class="home-middle-sidebar">
-		<div class="container px-responsive">
-			<div class="row my-4">
-				<?php dynamic_sidebar( 'sidebar-4' ); ?>
-			</div>
-		</div>
-	</aside>
-	<?php endif; ?>
+    <?php if (is_active_sidebar('sidebar-4')) : ?>
+        <aside class="home-middle-sidebar">
+            <div class="container px-responsive">
+                <div class="row my-4">
+                    <?php dynamic_sidebar('sidebar-4'); ?>
+                </div>
+            </div>
+        </aside>
+    <?php endif; ?>
 
-	<br class="clearfix" />
+    <br class="clearfix"/>
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

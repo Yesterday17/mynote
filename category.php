@@ -30,8 +30,8 @@ get_header();
     <div class="container">
         <div class="row row-layout-choice-archive">
             <section id="main-container" class="<?php echo esc_attr(mynote_main_container_css()); ?>">
-                <?php get_template_part('loop'); ?>
-                <?php get_template_part('pagination'); ?>
+                <?php get_template_part('template-parts/loop'); ?>
+                <?php get_template_part('template-parts/pagination'); ?>
             </section>
 
             <?php if (mynote_is_sidebar()) : ?>

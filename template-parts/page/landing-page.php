@@ -96,8 +96,8 @@ if (has_post_thumbnail()) {
                     $args = array('post_type' => 'post', 'posts_per_page' => $posts_per_page, 'paged' => $paged);
                     $wp_query = new WP_Query($args);
                     ?>
-                    <?php get_template_part('loop'); ?>
-                    <?php get_template_part('pagination'); ?>
+                    <?php get_template_part('template-parts/loop'); ?>
+                    <?php get_template_part('template-parts/pagination'); ?>
                 </section>
 
                 <?php if (mynote_is_sidebar()) : ?>

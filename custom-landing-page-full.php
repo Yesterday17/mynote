@@ -14,7 +14,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/page/landing', 'page'); ?>
+<?php get_template_part('template-parts/template-parts/page/landing', 'page'); ?>
 
 <?php if (is_active_sidebar('sidebar-4')) : ?>
     <aside class="home-middle-sidebar">

@@ -27,8 +27,8 @@ get_header();
 </div>
 <main role="main">
     <div class="container">
-        <?php get_template_part('loop'); ?>
-        <?php get_template_part('pagination'); ?>
+        <?php get_template_part('template-parts/loop'); ?>
+        <?php get_template_part('template-parts/pagination'); ?>
     </div>
 </main>
 
