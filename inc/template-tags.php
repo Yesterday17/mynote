@@ -824,9 +824,5 @@ function mynote_is_post_comment_section() {
  * @return bool
  */
 function mynote_is_responsive() {
-    $setting = get_theme_mod('is_responsive_website');
-    if (!mynote_toggle_check($setting)) {
-        return false;
-    }
     return true;
 }

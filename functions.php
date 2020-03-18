@@ -279,16 +279,3 @@ function remove_admin_login_header() {
 }
 
 add_action('get_header', 'remove_admin_login_header');
-
-/**
- * 增加移动设备显示的 meta
- */
-function add_meta_tags() {
-    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />';
-}
-
-add_action('wp_head', 'add_meta_tags');
-
-
-
-
