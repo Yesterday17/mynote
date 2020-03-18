@@ -14,19 +14,19 @@
 ?>
 
 <div class="pagination-container">
-	<?php
+    <?php
 
-	if ( function_exists( 'mynote_pagination' ) ) {
-		mynote_pagination();
-	} else {
-		the_posts_pagination(
-			array(
-				'prev_text'          => '<i class="fas fa-angle-left"></i> <span class="screen-reader-text">' . __( 'Previous page', 'mynote' ) . '</span>',
-				'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'mynote' ) . '</span> <i class="fas fa-angle-right"></i>',
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'mynote' ) . ' </span>',
-			)
-		);
-	}
+    if (function_exists('mynote_pagination')) {
+        mynote_pagination();
+    } else {
+        the_posts_pagination(
+            array(
+                'prev_text' => '<i class="fas fa-angle-left"></i> <span class="screen-reader-text">'.__('Previous page', 'mynote').'</span>',
+                'next_text' => '<span class="screen-reader-text">'.__('Next page', 'mynote').'</span> <i class="fas fa-angle-right"></i>',
+                'before_page_number' => '<span class="meta-nav screen-reader-text">'.__('Page', 'mynote').' </span>',
+            )
+        );
+    }
 
-	?>
+    ?>
 </div>

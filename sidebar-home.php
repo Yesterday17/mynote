@@ -11,14 +11,14 @@
  * @version 1.2.0
  */
 
-if ( ! is_active_sidebar( 'sidebar-6' ) ) {
-	return;
+if (!is_active_sidebar('sidebar-6')) {
+    return;
 }
 ?>
 
-<?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
-	<div id="sidebar-home" class="sidebar">
-		<?php dynamic_sidebar( 'sidebar-6' ); ?>
-	</div>
+<?php if (is_active_sidebar('sidebar-6')) : ?>
+    <div id="sidebar-home" class="sidebar">
+        <?php dynamic_sidebar('sidebar-6'); ?>
+    </div>
 <?php endif; ?>
 
