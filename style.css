@@ -25,20 +25,14 @@
 }
 
 ::selection {
-  background: #04A4CC;
-  color: #FFF;
-  text-shadow: none;
-}
-
-::-webkit-selection {
-  background: #04A4CC;
-  color: #FFF;
+  background: #04a4cc;
+  color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #04A4CC;
-  color: #FFF;
+  background: #04a4cc;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -46,9 +40,9 @@
 .single-post-header {
   background-color: #fafbfc;
   background: none;
-  padding: 20px 0px;
+  padding: 20px 0;
   margin-bottom: 20px;
-  border-bottom: 0px solid #e1e4e8;
+  border-bottom: 0 solid #e1e4e8;
 }
 
 .single-post-header h1 {
@@ -96,7 +90,7 @@ article figcaption {
 /* Category page. */
 .category-header {
   background-color: #fafbfc;
-  padding: 20px 0px;
+  padding: 20px 0;
   margin-bottom: 20px;
   border-bottom: 1px solid #e1e4e8;
 }
@@ -110,8 +104,8 @@ article figcaption {
 }
 
 .category-header h1:before {
-  font-family: 'Font Awesome 5 Free';
-  border: 0px #dddddd solid;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  border: 0 #dddddd solid;
   border-radius: 5px;
   width: 48px;
   height: 48px;
@@ -127,39 +121,62 @@ article figcaption {
   font-size: 1.6rem;
   font-weight: 600;
   padding-right: 5px;
-  text-shadow: rgba(102, 102, 102, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.6) 0 2px 1px;
-  background-image: -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 0.1) 7.5%), -webkit-repeating-linear-gradient(left, transparent 0%, transparent 4%, rgba(0, 0, 0, 0.03) 4.5%), -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1.2%, rgba(255, 255, 255, 0.15) 2.2%), linear-gradient(180deg, #c7c7c7 0%, #e6e6e6 47%, #c7c7c7 53%, #b3b3b3 100%);
+  text-shadow: rgba(102, 102, 102, 0.5) 0 -1px 0,
+  rgba(255, 255, 255, 0.6) 0 2px 1px;
+  background-image: -webkit-repeating-linear-gradient(
+          left,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0) 6%,
+          rgba(255, 255, 255, 0.1) 7.5%
+  ),
+  -webkit-repeating-linear-gradient(left, transparent 0%, transparent 4%, rgba(
+                  0,
+                  0,
+                  0,
+                  0.03
+          ) 4.5%),
+  -webkit-repeating-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(
+                  255,
+                  255,
+                  255,
+                  0
+          ) 1.2%, rgba(255, 255, 255, 0.15) 2.2%),
+  linear-gradient(180deg, #c7c7c7 0%, #e6e6e6 47%, #c7c7c7 53%, #b3b3b3 100%);
   color: #333333;
-  box-shadow: inset rgba(38, 38, 38, 0.2) 0 0px 0px 1px, inset rgba(38, 38, 38, 0.2) 0 -1px 1px 1px, inset rgba(0, 0, 0, 0.25) 0 -1px 0px 2px, inset rgba(255, 255, 255, 0.7) 0 1px 0px 2px, rgba(0, 0, 0, 0.15) 0 -1px 1px 1px, rgba(255, 255, 255, 0.5) 0 1px 1px 1px;
+  box-shadow: inset rgba(38, 38, 38, 0.2) 0 0 0 1px,
+  inset rgba(38, 38, 38, 0.2) 0 -1px 1px 1px,
+  inset rgba(0, 0, 0, 0.25) 0 -1px 0 2px,
+  inset rgba(255, 255, 255, 0.7) 0 1px 0 2px,
+  rgba(0, 0, 0, 0.15) 0 -1px 1px 1px, rgba(255, 255, 255, 0.5) 0 1px 1px 1px;
   /* outer HL */
 }
 
 .category-header h1.category:before {
-  content: '\f0c6';
+  content: "\f0c6";
 }
 
 .category-header h1.archive:before {
-  content: '\f1c6';
+  content: "\f1c6";
 }
 
 .category-header h1.tag:before {
-  content: '\f02c';
+  content: "\f02c";
 }
 
 .category-header h1.git:before {
-  content: '\f1d3';
+  content: "\f1d3";
 }
 
 .category-header h1.search:before {
-  content: '\f002';
+  content: "\f002";
 }
 
 .category-header h1.user:before {
-  content: '\f007';
+  content: "\f007";
 }
 
 .category-header h1.error-404:before {
-  content: '\f071';
+  content: "\f071";
 }
 
 .category-header h1 .badge {
@@ -179,7 +196,7 @@ article figcaption {
   transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
   transform-origin: top;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .single-post-title-bar.fixed-top {
@@ -223,7 +240,7 @@ article figcaption {
   position: fixed;
   right: 15px;
   bottom: 15px;
-  margin: 0px;
+  margin: 0;
   z-index: 1000;
   width: 35px;
   height: 35px;
@@ -263,7 +280,7 @@ article figcaption {
 }
 
 .tags a:before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free", sans-serif;
   content: "\f02b";
   font-size: 13px;
   font-weight: 900;
@@ -295,15 +312,6 @@ article figcaption {
   display: -moz-box;
   -moz-box-align: center;
   -moz-box-pack: center;
-  display: -o-box;
-  -o-box-align: center;
-  -o-box-pack: center;
-  display: -ms-box;
-  -ms-box-align: center;
-  -ms-box-pack: center;
-  /*     display: box; */
-  /*     box-align: center; */
-  /*     box-pack: center; */
 }
 
 /* Read more fade out effect */
@@ -317,7 +325,7 @@ article figcaption {
 
 .card-text-fade-out .effect-layer {
   position: absolute;
-  content: ' ';
+  content: " ";
   bottom: 0;
   left: 0;
   width: 100%;
@@ -328,7 +336,13 @@ article figcaption {
   z-index: 2;
   margin: 0;
   padding: 0 0 20px 0;
-  background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9), white);
+  background-image: linear-gradient(
+          to bottom,
+          transparent,
+          rgba(255, 255, 255, 0.5),
+          rgba(255, 255, 255, 0.9),
+          white
+  );
 }
 
 .card-body-footer {
@@ -422,7 +436,7 @@ article figcaption {
   left: 50%;
   width: 50px;
   height: 50px;
-  opacity: .9;
+  opacity: 0.9;
   overflow: hidden;
   display: none !important;
 }
@@ -580,18 +594,18 @@ article figcaption {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: .4em !important;
+  margin-left: 0.4em !important;
   vertical-align: middle !important;
   content: "";
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
   border-bottom: 0;
-  border-left: .3em solid transparent;
+  border-left: 0.3em solid transparent;
 }
 
 .header .navbar-nav .dropdown-menu {
   min-width: 10rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   margin: 6px 0 0;
   font-size: 1rem;
   color: #212529;
@@ -617,7 +631,7 @@ article figcaption {
   }
 
   .header .navbar-nav .dropdown-menu::after {
-    border-bottom: 8px solid #FFFFFF;
+    border-bottom: 8px solid #ffffff;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
     content: "";
@@ -634,7 +648,7 @@ article figcaption {
 
 .header .menu-item a {
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .has-site-logo .navbar-brand {
@@ -673,7 +687,8 @@ article figcaption {
   justify-content: space-between;
 }
 
-.footer .footer-columns a, .footer .footer-columns strong {
+.footer .footer-columns a,
+.footer .footer-columns strong {
   font-weight: normal;
   color: #333333;
 }
@@ -909,7 +924,8 @@ article figcaption {
 
 /* Typography - Single post page */
 #post-title {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
   font-size: 2.2rem;
   font-weight: 300;
   padding: 0.5rem 0;
@@ -923,7 +939,8 @@ article figcaption {
 
 /* Typography - Home page */
 .section-intro {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif !important;
   font-weight: 300;
 }
 
@@ -971,7 +988,7 @@ article figcaption {
 
 /* Typography - Others */
 .label {
-  font-size: .675rem;
+  font-size: 0.675rem;
 }
 
 .x-label {
@@ -993,51 +1010,99 @@ article figcaption {
 
 /* Use the best fit font for different languages */
 :lang(en) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
 
-:lang(en) h1, :lang(en) h2, :lang(en) h3, :lang(en) h4, :lang(en) h5, :lang(en) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+:lang(en) h1,
+:lang(en) h2,
+:lang(en) h3,
+:lang(en) h4,
+:lang(en) h5,
+:lang(en) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
 
-:lang(en) .section-intro, :lang(en) #post-title, :lang(en) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+:lang(en) .section-intro,
+:lang(en) #post-title,
+:lang(en) .site-info {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
 
 :lang(zh) body {
-  font-family: "Noto Sans CJK SC", Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Noto Sans CJK SC", Arial, "Microsoft Yahei", "Hiragino Sans GB",
+  "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 }
 
-:lang(zh) h1, :lang(zh) h2, :lang(zh) h3, :lang(zh) h4, :lang(zh) h5, :lang(zh) h6 {
-  font-family: "Noto Sans CJK SC", Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+:lang(zh) h1,
+:lang(zh) h2,
+:lang(zh) h3,
+:lang(zh) h4,
+:lang(zh) h5,
+:lang(zh) h6 {
+  font-family: "Noto Sans CJK SC", Arial, "Microsoft Yahei", "Hiragino Sans GB",
+  "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 }
 
-:lang(zh) .section-intro, :lang(zh) #post-title, :lang(zh) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB";
+:lang(zh) .section-intro,
+:lang(zh) #post-title,
+:lang(zh) .site-info {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑",
+  "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體",
+  "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB", sans-serif;
 }
 
 :lang(ja) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ",
+  "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
 
-:lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) h4, :lang(ja) h5, :lang(ja) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+:lang(ja) h1,
+:lang(ja) h2,
+:lang(ja) h3,
+:lang(ja) h4,
+:lang(ja) h5,
+:lang(ja) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ",
+  "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
 
-:lang(ja) .section-intro, :lang(ja) #post-title, :lang(ja) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+:lang(ja) .section-intro,
+:lang(ja) #post-title,
+:lang(ja) .site-info {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ",
+  "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
 
 :lang(ko) body {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
 }
 
-:lang(ko) h1, :lang(ko) h2, :lang(ko) h3, :lang(ko) h4, :lang(ko) h5, :lang(ko) h6 {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+:lang(ko) h1,
+:lang(ko) h2,
+:lang(ko) h3,
+:lang(ko) h4,
+:lang(ko) h5,
+:lang(ko) h6 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
 }
 
-:lang(ko) .section-intro, :lang(ko) #post-title, :lang(ko) .site-info {
-  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+:lang(ko) .section-intro,
+:lang(ko) #post-title,
+:lang(ko) .site-info {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue",
+  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
 }
 
 /* Sidebar widgets */
@@ -1077,7 +1142,9 @@ article figcaption {
   color: #333333;
 }
 
-.widget_calendar table th, .widget_calendar table td, .widget_calendar table caption {
+.widget_calendar table th,
+.widget_calendar table td,
+.widget_calendar table caption {
   text-align: center;
   padding: 5px;
 }
@@ -1226,11 +1293,13 @@ article figcaption {
   display: flex;
 }
 
-.post-mynote-buttons a, .post-mynote-buttons a:hover {
+.post-mynote-buttons a,
+.post-mynote-buttons a:hover {
   text-decoration: none !important;
 }
 
-.post-mynote-buttons > div, .post-mynote-buttons > a {
+.post-mynote-buttons > div,
+.post-mynote-buttons > a {
   margin-left: 5px !important;
 }
 
@@ -1250,15 +1319,16 @@ article figcaption {
   color: #ffffff;
 }
 
-a.btn, a.button-like-link {
+a.btn,
+a.button-like-link {
   text-decoration: none !important;
 }
 
 a.btn-xs {
-  padding: .125rem .25rem;
-  font-size: .675rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.675rem;
   line-height: 1.2;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 a.btn-info {
@@ -1266,19 +1336,21 @@ a.btn-info {
 }
 
 .label {
-  padding: .125rem .25rem;
+  padding: 0.125rem 0.25rem;
   line-height: 1.2;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   border: 1px solid transparent;
 }
 
-.label.label-success, .label.label-cat {
+.label.label-success,
+.label.label-cat {
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
 }
 
-.label.label-warning, .label.label-tag {
+.label.label-warning,
+.label.label-tag {
   color: #856404;
   background-color: #fff3cd;
   border-color: #ffeeba;
@@ -1315,9 +1387,9 @@ a.btn-info {
 }
 
 .x-label {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   line-height: 1.5;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 1px solid transparent;
   margin: 5px;
   word-break: keep-all !important;
@@ -1496,7 +1568,7 @@ a.btn-info {
   width: calc(100% - 50px);
 }
 
-nav[data-toggle='toc'] .nav > li > a {
+nav[data-toggle="toc"] .nav > li > a {
   display: block;
   padding: 4px 20px;
   font-size: 14px;
@@ -1504,8 +1576,8 @@ nav[data-toggle='toc'] .nav > li > a {
   color: #767676;
 }
 
-nav[data-toggle='toc'] .nav > li > a:hover,
-nav[data-toggle='toc'] .nav > li > a:focus {
+nav[data-toggle="toc"] .nav > li > a:hover,
+nav[data-toggle="toc"] .nav > li > a:focus {
   padding-left: 19px;
   color: dodgerblue;
   text-decoration: none;
@@ -1513,9 +1585,9 @@ nav[data-toggle='toc'] .nav > li > a:focus {
   border-left: 2px solid dodgerblue;
 }
 
-nav[data-toggle='toc'] .nav-link.active,
-nav[data-toggle='toc'] .nav-link.active:hover,
-nav[data-toggle='toc'] .nav-link.active:focus {
+nav[data-toggle="toc"] .nav-link.active,
+nav[data-toggle="toc"] .nav-link.active:hover,
+nav[data-toggle="toc"] .nav-link.active:focus {
   padding-left: 18px;
   font-weight: bold;
   color: dodgerblue;
@@ -1524,13 +1596,13 @@ nav[data-toggle='toc'] .nav-link.active:focus {
 }
 
 /* Nav: second level (shown on .active) */
-nav[data-toggle='toc'] .nav-link + ul {
+nav[data-toggle="toc"] .nav-link + ul {
   /* display: none; */
   /* Hide by default, but at >768px, show it */
   padding-bottom: 10px;
 }
 
-nav[data-toggle='toc'] .nav .nav > li > a {
+nav[data-toggle="toc"] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
@@ -1538,19 +1610,19 @@ nav[data-toggle='toc'] .nav .nav > li > a {
   font-weight: normal;
 }
 
-nav[data-toggle='toc'] .nav .nav > li > a:hover,
-nav[data-toggle='toc'] .nav .nav > li > a:focus {
+nav[data-toggle="toc"] .nav .nav > li > a:hover,
+nav[data-toggle="toc"] .nav .nav > li > a:focus {
   padding-left: 27px;
 }
 
-nav[data-toggle='toc'] .nav .nav > li > .active,
-nav[data-toggle='toc'] .nav .nav > li > .active:hover,
-nav[data-toggle='toc'] .nav .nav > li > .active:focus {
+nav[data-toggle="toc"] .nav .nav > li > .active,
+nav[data-toggle="toc"] .nav .nav > li > .active:hover,
+nav[data-toggle="toc"] .nav .nav > li > .active:focus {
   padding-left: 27px;
   font-weight: 500;
 }
 
-nav[data-toggle='toc'] .nav-link.active + ul {
+nav[data-toggle="toc"] .nav-link.active + ul {
   display: block;
 }
 
@@ -1696,7 +1768,8 @@ nav[data-toggle='toc'] .nav-link.active + ul {
   border-radius: 0 !important;
 }
 
-.breadcrumb ul, .breadcrumb li {
+.breadcrumb ul,
+.breadcrumb li {
   margin: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -1903,8 +1976,8 @@ p > object:only-child {
 /* > 992px */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .menu-item a {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -2012,7 +2085,7 @@ p > object:only-child {
   }
 
   .section-intro h1 {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
 
   .section-intro .desc-text {
@@ -2131,7 +2204,9 @@ p > object:only-child {
   overflow: hidden;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -2140,14 +2215,16 @@ p > object:only-child {
 }
 
 /* WooCommerce */
-.woocommerce input, .woocommerce button {
+.woocommerce input,
+.woocommerce button {
   height: 45px;
   line-height: 45px;
   font-size: 1.2rem;
   border-radius: 4px;
 }
 
-.woocommerce input[type="number"], .woocommerce select {
+.woocommerce input[type="number"],
+.woocommerce select {
   border: 1px #cccccc solid;
   border-radius: 4px;
 }
@@ -2156,7 +2233,12 @@ p > object:only-child {
   font-size: 13px;
 }
 
-.woocommerce .entry-summary h1, .woocommerce .entry-summary h2, .woocommerce .entry-summary h3, .woocommerce .entry-summary h4, .woocommerce .entry-summary h5, .woocommerce .entry-summary h6 {
+.woocommerce .entry-summary h1,
+.woocommerce .entry-summary h2,
+.woocommerce .entry-summary h3,
+.woocommerce .entry-summary h4,
+.woocommerce .entry-summary h5,
+.woocommerce .entry-summary h6 {
   font-size: 1rem !important;
   line-height: 170%;
 }
@@ -2177,7 +2259,9 @@ p > object:only-child {
   margin: 10px;
 }
 
-.woocommerce .is-page .post-mynote-buttons, .woocommerce .is-page .modified-date, .woocommerce .is-page .post-meta {
+.woocommerce .is-page .post-mynote-buttons,
+.woocommerce .is-page .modified-date,
+.woocommerce .is-page .post-meta {
   display: none !important;
 }
 
@@ -2204,15 +2288,18 @@ p > object:only-child {
   color: #6a737d;
 }
 
-.markdown-body .pl-c1, .markdown-body .pl-s .pl-v {
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
   color: #005cc5;
 }
 
-.markdown-body .pl-e, .markdown-body .pl-en {
+.markdown-body .pl-e,
+.markdown-body .pl-en {
   color: #6f42c1;
 }
 
-.markdown-body .pl-smi, .markdown-body .pl-s .pl-s1 {
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
   color: #24292e;
 }
 
@@ -2224,7 +2311,9 @@ p > object:only-child {
   color: #d73a49;
 }
 
-.markdown-body .pl-s, .markdown-body .pl-pds, .markdown-body .pl-s .pl-pse .pl-s1 {
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1 {
   color: #032f62;
 }
 
@@ -2232,11 +2321,14 @@ p > object:only-child {
   color: #032f62;
 }
 
-.markdown-body .pl-sr .pl-cce, .markdown-body .pl-sr .pl-sre, .markdown-body .pl-sr .pl-sra {
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
   color: #032f62;
 }
 
-.markdown-body .pl-v, .markdown-body .pl-smw {
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
   color: #e36209;
 }
 
@@ -2340,7 +2432,8 @@ p > object:only-child {
   background-color: transparent;
 }
 
-.markdown-body a:active, .markdown-body a:hover {
+.markdown-body a:active,
+.markdown-body a:hover {
   outline-width: 0;
 }
 
@@ -2358,7 +2451,9 @@ p > object:only-child {
   border-style: none;
 }
 
-.markdown-body code, .markdown-body kbd, .markdown-body pre {
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
   font-family: monospace, monospace;
 }
 
@@ -2427,11 +2522,17 @@ p > object:only-child {
   border-collapse: collapse;
 }
 
-.markdown-body td, .markdown-body th {
+.markdown-body td,
+.markdown-body th {
   padding: 0;
 }
 
-.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2495,11 +2596,13 @@ p > object:only-child {
   list-style-type: lower-roman;
 }
 
-.markdown-body ul ul ol, .markdown-body ul ol ol {
+.markdown-body ul ul ol,
+.markdown-body ul ol ol {
   list-style-type: lower-alpha;
 }
 
-.markdown-body ol ul ol, .markdown-body ol ol ol {
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
   list-style-type: lower-alpha;
 }
 
@@ -2574,7 +2677,13 @@ p > object:only-child {
   outline: none;
 }
 
-.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
   margin-top: 0;
   /*margin-bottom: 16px;*/
 }
@@ -2615,24 +2724,44 @@ p > object:only-child {
   box-shadow: inset 0 -1px 0 #959da5;
 }
 
-.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
 }
 
-.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
   color: #1b1f23;
   vertical-align: middle;
   visibility: hidden;
 }
 
-.markdown-body h1:hover .anchor, .markdown-body h2:hover .anchor, .markdown-body h3:hover .anchor, .markdown-body h4:hover .anchor, .markdown-body h5:hover .anchor, .markdown-body h6:hover .anchor {
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
   text-decoration: none;
 }
 
-.markdown-body h1:hover .anchor .octicon-link, .markdown-body h2:hover .anchor .octicon-link, .markdown-body h3:hover .anchor .octicon-link, .markdown-body h4:hover .anchor .octicon-link, .markdown-body h5:hover .anchor .octicon-link, .markdown-body h6:hover .anchor .octicon-link {
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
   visibility: visible;
 }
 
@@ -2665,16 +2794,19 @@ p > object:only-child {
   color: #6a737d;
 }
 
-.markdown-body ul, .markdown-body ol {
+.markdown-body ul,
+.markdown-body ol {
   padding-left: 2em;
 }
 
-.markdown-body ul ul, .markdown-body ul ol {
+.markdown-body ul ul,
+.markdown-body ul ol {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.markdown-body ol ol, .markdown-body ol ul {
+.markdown-body ol ol,
+.markdown-body ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2740,11 +2872,11 @@ p > object:only-child {
   background-color: #fff;
 }
 
-.markdown-body img[align=right] {
+.markdown-body img[align="right"] {
   padding-left: 20px;
 }
 
-.markdown-body img[align=left] {
+.markdown-body img[align="left"] {
   padding-right: 20px;
 }
 
@@ -2756,7 +2888,8 @@ p > object:only-child {
 .markdown-body kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+  monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -2791,14 +2924,16 @@ p > object:only-child {
 }
 
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+  monospace;
   font-size: 12px;
 }
 
 pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+  monospace;
   font-size: 12px;
 }
 
@@ -2846,5 +2981,5 @@ pre code {
 
 /* Yesterday17 */
 .y-bg-3 {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, 0.3);
 }

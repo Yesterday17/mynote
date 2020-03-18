@@ -104,9 +104,6 @@ function mynote_styles() {
     wp_register_style('fontawesome', get_template_directory_uri().'/assets/css/fontawesome-all.min.css', array(), '5.1.0', 'all');
     wp_enqueue_style('fontawesome');
 
-    wp_register_style('mynote-font-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400', array(), '1.0', 'all');
-    wp_enqueue_style('mynote-font-roboto');
-
     wp_register_style('mynote', get_template_directory_uri().'/style.css', array(), '1.6.0', 'all');
     wp_enqueue_style('mynote');
 }
