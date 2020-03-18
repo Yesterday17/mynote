@@ -42,8 +42,6 @@ if (has_post_thumbnail()) {
                                 </div>
                             </aside>
                         </div>
-                    <?php else : ?>
-                        <p class="p-5"><?php mynote_category_labels(); ?></p>
                     <?php endif; ?>
                 </div>
             </div>

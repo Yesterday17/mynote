@@ -493,9 +493,6 @@ function mynote_site_icon() {
 /**
  * Site logo.
  *
- * Mynote dosn't use the_custom_logo(), the reason is because it supports 4.5 or up.
- * I hope even lower version of WordPress is able to use this theme as well.
- *
  * @return string Logo Url
  */
 function mynote_site_logo() {
@@ -548,28 +545,6 @@ function mynote_category() {
 
     foreach ($categories as $category) {
         echo '<a class="btn btn-xs btn-green" href="'.esc_url(get_category_link($category->term_id)).'"><i class="fas fa-star"></i>'.esc_html($category->cat_name).'</a>';
-    }
-}
-
-/**
- * Show category labels on homepage.
- * Parent only.
- *
- * @return void
- */
-function mynote_category_labels() {
-    $categories = get_categories();
-
-    $i = 0;
-    foreach ($categories as $cat) {
-        if (!empty($cat->parent)) {
-            // Only shows parent catrgories.
-            continue;
-        }
-        echo '<a href="'.esc_url(get_term_link($cat->slug, 'category')).'" class="x-label x-label-'.$i.'">'.esc_html($cat->name).'</a>';
-        if (10 === ++$i) {
-            $i = 0;
-        }
     }
 }
 
